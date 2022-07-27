@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style-contact.css">
+        <title>About Me</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="./index.html">Krishna Chilakapati<b>.</b></a></div>
+                <ul class="navItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./skills.html">Skills</a></li> 
+                    <li><a href=""#>Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/krishna-chilakapati/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </nav>
+            <br>
+            <br>
+            <div class="wrapper">
+                <h3><span class="topline">Contact Me</span></h3>
+                <h4><span class="multiText">I am looking for a software engineering internship for Fall 2022 and Summer 2023. 
+                                            I'm also interested in freelance opportunities. If you have other requests 
+                                            or questions, don't hesitate to use the form.
+
+                </span></h4>
+            <br>
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            </div>
+        </div>
+    </body>
+</html>
