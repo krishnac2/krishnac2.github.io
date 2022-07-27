@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Krishna's Portfolio</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="./index.html">Krishna Chilakapati<b>.</b></a></div>
+                <ul class="navItems">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./skills.html">skills</a></li>
+                    <li><a href=""#>Projects</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/krishna-chilakapati/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </nav>
+
+
+            <div class="wrapper">
+                <div class="cols cols0">
+                    <span class="topline">Hello</span>
+                    <h1>I'm a <span class="multiText"></span></h1>
+                    <p>I'm an aspiring software engineer looking for a Fall 2022 or Summer 2023 internship role.</p>
+                    <div class="buttons">
+                        <button><a href="Krishna.Chilakapati Resume.pdf" target="_blank">Resume</a></button>
+                    </div>
+                </div>
+                <div class="cols cols1">
+                    <div class="imgbox">
+                        <img src="splash.png" id="splash">
+                        <img src="img.png">
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typingEffect = new Typed(".multiText", {
+                strings : ["coder", "student"],
+                loop: true, 
+                typeSpeed: 100, 
+                backSpeed: 80,
+                backDelay: 1800
+            })
+        </script>
+    </body>
+</html>
