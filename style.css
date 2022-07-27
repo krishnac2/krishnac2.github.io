@@ -202,20 +202,20 @@ button:hover{
     height: 100%;
     width: calc(130% - 80px);
     top: -30px;
-    right: 50px;
+    left: 30px;
     animation: animateUser 4s linear infinite;
 }
 
 @keyframes animateUser{
     50%{
-        right: 30px;
+        left: 10px;
         top: -40px;
     }
 }
 .imgbox #splash{
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 51%;
     transform: translate(-50%, -50%) rotate(-35deg);
     width: 140%;
     animation: animate 4s linear infinite;
@@ -225,7 +225,7 @@ button:hover{
 @keyframes animate{
     50%{
         top: 49%;
-        left: 51%;
+        left: 55%;
         width: 143%
     }
 }
