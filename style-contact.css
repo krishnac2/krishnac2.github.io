@@ -6,7 +6,7 @@
     font-family: 'poppins', sans-serif;
 }
 body{
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: #f3f5f8;
 }
 .container{
@@ -138,4 +138,9 @@ p{
     position: relative;
     font-size: 20px;
     color: #3d535f;
+}
+
+.multiText a{
+    text-decoration: none;
+    text-decoration-color: #7f00ff;
 }

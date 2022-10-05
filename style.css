@@ -90,17 +90,7 @@ b{
     animation: object1 5s linear infinite;
 }
 
-.wrapper::after{
-    position: absolute;
-    content: '';
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 35%;
-    top: 12%;
-    background: linear-gradient(45deg, #7f00ff, pink);
-    animation: object2 5s linear infinite;
-}
+
 
 @keyframes object1{
     50%{
@@ -109,12 +99,6 @@ b{
     }
 }
 
-@keyframes object2{
-    50%{
-        left: 35%;
-        top: 10%;
-    }
-}
 .cols{
     width: 50%;
 }
@@ -200,16 +184,16 @@ button:hover{
 .imgbox img{
     position: relative;
     height: 100%;
-    width: calc(130% - 80px);
-    top: -30px;
-    left: 30px;
+    width: calc(70% - 80px);
+    top: -20px;
+    left: 130px;
     animation: animateUser 4s linear infinite;
 }
 
 @keyframes animateUser{
     50%{
-        left: 10px;
-        top: -40px;
+        left: 110px;
+        top: -30px;
     }
 }
 .imgbox #splash{
@@ -217,7 +201,7 @@ button:hover{
     top: 50%;
     left: 51%;
     transform: translate(-50%, -50%) rotate(-35deg);
-    width: 140%;
+    width: 100%;
     animation: animate 4s linear infinite;
     filter: saturate(150%);
 }
@@ -226,6 +210,6 @@ button:hover{
     50%{
         top: 49%;
         left: 55%;
-        width: 143%
+        width: 105%
     }
 }
