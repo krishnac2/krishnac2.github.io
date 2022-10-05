@@ -1,3 +1,3 @@
-# krishnac2.github.io
-Website Link: https://krishnac2.github.io/                                                                                    
-Personal Portfolio coded using HTML and CSS.
+# Portfolio
+## Developed in HTML and CSS
+### Website Link: https://krishnac2.github.io/                                                                                    
