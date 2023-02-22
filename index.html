@@ -1,55 +1,335 @@
 <!DOCTYPE html>
-<html Lang="en">
-    <head>
-        <meta charset ="UTF-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Krishna's Portfolio</title>
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <div class="logo"><a href="./index.html">Krishna Chilakapati<b>.</b></a></div>
-                <ul class="navItems">
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="./about.html">about</a></li>
-                    <li><a href="./skills.html">skills</a></li>
-                    <li><a href="./project.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact Me</a></li>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Krishna</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INTRODUCTION</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EDUCATION AND EXPERIENCE</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROJECTS</a></li>
                 </ul>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/krishna-chilakapati/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/krishnac2" target="blank"><i class="fab fa-github"></i></a>
-                </div>
             </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
 
-
-            <div class="wrapper">
-                <div class="cols cols0">
-                    <span class="topline">Hello</span>
-                    <h1>I'm a <span class="multiText"></span></h1>
-                    <p>My name is Krishna Chilakapati and I am an aspiring software engineer interested in a Summer 2023 internship role.</p>
-                    <div class="buttons">
-                        <button><a href="Chilakapati_Krishna Resume.pdf" target="_blank">Resume</a></button>
-                    </div>
-                </div>
-                <div class="cols cols1">
-                    <div class="imgbox">
-                        <img src="splash.png" id="splash">
-                        <img src="img.png">
-                    </div>
-                </div>            
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Krishna Chilakapati</h1>
+            <h2>Full Stack Software Engineer</h2>
+            <div class="redes">
+                <a href="https://github.com/krishnac2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishna-chilakapati/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            var typingEffect = new Typed(".multiText", {
-                strings : ["coder", "student"],
-                loop: true, 
-                typeSpeed: 100, 
-                backSpeed: 80,
-                backDelay: 1800
-            })
-        </script>
-    </body>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hey, I'm Krishna Chilakapati,</span> a junior computer science student at UConn. I'm a self starter who takes every oppotrunity to upskill myself, whether it's through my internships, personal programming projects, or taking courses online to learn more about the technology industry. Aside from my passion for technology and I'm really interested in venture capital, as they help identify and support many tech start ups in becoming succesful companies.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Additional Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            krishna.chilakapati2@gmail.com
+                        </li>
+                        <li>
+                            <strong>Expertise</strong>
+                            Front-end, Back-end, and Full-stack Development
+                        </li>
+                        <li>
+                            <strong>Languages</strong>
+                            English, Telugu, Hindi, Tamil, French
+                        </li>
+                        <li>
+                            <strong>Insight Programs</strong>
+                            IBM Accelerate Client Engineering, Citi Early ID ICG Technology
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-swimmer"></i>
+                            <span>Swimming</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/yoga.png" alt="Yoga">
+                            <span>Yoga</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/dancer.png" alt="Dance">
+                            <span>Dance</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Taylor Swift</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/baking.png" alt="Baking">
+                            <span>Baking</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/marvel.png" alt="Marvel">
+                            <span>Marvel</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/fitness.png" alt="Fitness">
+                            <span>Fitness</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Photography</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button><a href="Chilakapati_Krishna_Spring2023.pdf" target="_blank">View my resume</a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Programming Languages</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Software and Tools</h3>
+                    <div class="skill">
+                        <span>AWS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Agile & Scrum Methodologies</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Jenkins</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Postman</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Education and Experiences</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Honors Computer Science</h4>
+                        <span class="casa">University of Connecticut</span>
+                        <span class="fecha">2020 - 2024</span>
+                        <p>Relevant Coursework: Software Development, Systems Programming, Object-Oriented Programming, Data Structures and 
+                            Algorithms, Computer Architecture, Distributive Systems, Agile Development, Statistical Methods, Linear Algebra</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Extracurricular</h3>
+                    <div class="item izq">
+                        <h4>Engineering for Impact Committee</h4>
+                        <span class="casa">Society of Women Engineers</span>
+                        <span class="fecha">2021 - Present</span>
+                        <p>Attend Committee meetings and monthly workshops in order to develop leadership skills and volunteer at events to encourage younger generations of female students to pursue a career in engineering</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Relevant Experience</h3>
+                    <div class="item der">
+                        <h4>Incoming Software Engineering Intern</h4>
+                        <span class="casa">Moody's Corporation</span>
+                        <span class="fecha">Summer of 2023</span>
+                        <p>Will develop reusable UI components, guided by the specifications of UI designers, and implement front-end components 
+                            using React.js, Redux, material UI, and AWS Cloud Infrastructure</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Software Engineering Intern</h4>
+                        <span class="casa">Travelers</span>
+                        <span class="fecha">Summer of 2022</span>
+                        <p>Worked on an agile team to code a collection of rules in JavaScript using rule authoring tool (to trigger at given conditions 
+                            while creating an insurance policy) and onboarded coded rules to GitHub using lean software development principles</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Projects</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://movie-software.herokuapp.com/" target="_blank">
+                    <img src="img/m1.png" alt="movie recommending software">
+                    <div class="overlay">
+                        <h3>Movie Recommending Software</h3>
+                        <p>Python, Jupyter Notebook, Heroku</p>
+                    </div>
+                </a>
+                </div>
+            
+            <div class="proyecto">
+                <a href="http://crazy-8s-online.herokuapp.com/" target="_blank">    
+                <img src="img/c1.png" alt="crazy 8's game">
+                    <div class="overlay">
+                        <h3>Crazy 8's Game</h3>
+                        <p>JavaScript, React, Socket.io, Heroku</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/krishnac2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishna-chilakapati/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
