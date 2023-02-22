@@ -6,11 +6,13 @@
     padding: 0;
 }
 html{
-    /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+body {
+    background-color: #1d2731;
+}
 /* MENU */
-.contenedor-header{
+.container-header{
     background: #1d2731;
     position: fixed;
     width: 100%;
@@ -18,7 +20,7 @@ html{
     left: 0;
     z-index: 99;
 }
-.contenedor-header header{
+.container-header header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -26,17 +28,17 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+.container-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
     color: #f6c5cf;
     text-decoration: none;
 }
-.contenedor-header header ul{
+.container-header header ul{
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
+.container-header header nav ul li a{
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -44,7 +46,7 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+.container-header header nav ul li a:hover{
     color: #f6c5cf;
 }
 .nav-responsive{
@@ -55,8 +57,8 @@ html{
     cursor: pointer;
     display: none;
 }
-/* SECCION I N I C I O */
-.inicio{
+/* INTRODUCTION */
+.introduction{
     background: linear-gradient(to top, rgba(38, 30, 38, 0.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
     background-size: cover;
@@ -65,7 +67,7 @@ html{
     display: flex;
     align-items: center;
 }
-.inicio .contenido-banner{
+.introduction .content-banner{
     padding: 20px;
     background-color: #1d2731;
     max-width: 350px;
@@ -73,7 +75,7 @@ html{
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+.introduction .content-banner img{
     margin-top: 40px;
     border: 10px solid #f6c5cf;
     display: block;
@@ -81,16 +83,16 @@ html{
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenido-banner h1{
+.introduction .content-banner h1{
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
-.inicio .contenido-banner h2{
+.introduction .content-banner h2{
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+.introduction .content-banner .links a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -103,69 +105,69 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
+.introduction .content-banner .links a:hover{
     background-color: #f6c5cf;
 }
-.sobremi{
+.about_me{
     background-color: #1d2731;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+.about_me .content-section{
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+.about_me h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.sobremi .contenido-seccion p{
+.about_me .content-section p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+.about_me .content-section p span{
     color: #f6c5cf;
     font-weight: bold;
 }
-.sobremi .fila{
+.about_me .row{
     display: flex;
 }
-.sobremi .fila .col
+.about_me .row .col
 {
     width: 50%;
 }
-.sobremi .fila .col h3{
+.about_me .row .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+.about_me .row .col ul{
     list-style: none;
 }
-.sobremi .fila .col ul li{
+.about_me .row .col ul li{
     display: block;
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+.about_me .row .col ul li strong{
     display: block;
     color: #f6c5cf;
     width: 160px;
 }
-.sobremi .fila .col ul li span{
+.about_me .row .col ul li span{
     background-color: #f6c5cf;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+.about_me .row .col .container-interests{
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+.about_me .row .col .container-interests .interest{
     width: 100px;
     height: 100px;
     background-color: #1d2731;
@@ -178,20 +180,20 @@ html{
     transition: .3s;
     text-align: center;
 }
-.sobremi .fila .col .contenedor-intereses .interes img {
+.about_me .row .col .container-interests .interest img {
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
 }
 
-.sobremi .fila .col .contenedor-intereses .interes:hover{
+.about_me .row .col .container-interests .interest:hover{
     background-color: #f6c5cf;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+.about_me .row .col .container-interests .interest i{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.about_me button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -205,12 +207,12 @@ html{
     z-index: 10;
     transition: color 1s;
 }
-.sobremi button a {
+.about_me button a {
     text-decoration: none;
     color: inherit;
 
 }
-.sobremi button .overlay{
+.about_me button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -221,20 +223,20 @@ html{
     transition: 1s;
 }
 
-.sobremi button:hover {
+.about_me button:hover {
     color: #1d2731;
 }
   
-.sobremi button:hover .overlay{
+.about_me button:hover .overlay{
     width: 100%;
 }
-/* SECCION S K I L L S */
+/* SKILLS */
 .skills{
     background-color: #1d2731;
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
+.skills .content-section{
     max-width: 1100px;
     margin: auto;
 }
@@ -245,14 +247,14 @@ html{
     padding: 20px 0;
 
 }
-.skills .fila{
+.skills .row{
     display: flex;
 }
-.skills .fila .col{
+.skills .row .col{
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+.skills .row .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
@@ -263,21 +265,21 @@ html{
     display: block;
     margin-bottom: 10px;
 }
-.skills .skill .barra-skill{
+.skills .skill .skill-bar{
     height: 8px;
     width: 80%;
-    background-color: #131517;
+    background-color: #fff;
     position: relative;
     margin-bottom: 30px;
 }
-.skills .skill .progreso{
+.skills .skill .progress{
     background-color: #f6c5cf;
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
 }
-.skills .skill .barra-skill span{
+.skills .skill .skill-bar span{
     position: absolute;
     height: 40px;
     width: 40px;
@@ -289,9 +291,8 @@ html{
     top: -17px;
     right: -15px;
     font-size: 14px;
-    font-weight:bold;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
+/* These classes are dynamically grouped via javascript */
 .skills .skill .java{
     width: 0%;
     animation: 2s java forwards;
@@ -399,75 +400,75 @@ html{
     0%{width: 0%;}
     100%{width: 85%;}
 }
-/* SECCION CURRICULUM */
-.curriculum{
+/* EXPERIENCES */
+.experiences{
     background-color: #1d2731;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.experiences .content-section{
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+.experiences h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.curriculum .fila{
+.experiences .row{
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+.experiences .row .col{
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+.experiences .row .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+.experiences .row .leftside{
     border-right: 2px solid #052838;
 }
-.curriculum .fila .derecha{
+.experiences .row .rightside{
     border-left: 2px solid #052838;
 }
-.curriculum .fila .item{
+.experiences .row .item{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #052838;
     position: relative;
 }
-.curriculum .fila .item h4{
+.experiences .row .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+.experiences .row .item .org{
     color: #f6c5cf;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+.experiences .row .item .date{
     display: block;
     color: #f6c5cf;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+.experiences .row .item p{
     line-height: 24px;
 }
-.curriculum .fila .izq{
+.experiences .row .left{
     border-right: 2px solid #f6c5cf;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+.experiences .row .right{
     border-left: 2px solid #f6c5cf;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+.experiences .row .item .line-left{
     height: 2px;
     background-color: #f6c5cf;
     width: 47px;
@@ -476,7 +477,7 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+.experiences .row .item .line-left .circle-left{
     display: block;
     height: 10px;
     width: 10px;
@@ -486,7 +487,7 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+.experiences .row .item .line-right{
     height: 2px;
     background-color: #f6c5cf;
     width: 47px;
@@ -495,7 +496,7 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+.experiences .row .item .line-right .circle-right{
     display: block;
     height: 10px;
     width: 10px;
@@ -505,45 +506,45 @@ html{
     position: relative;
     bottom: 4px;
 }
-/* SECCION PORTFOLIO */
-.portfolio{
+/* PROJECTS */
+.projects{
     background-color: #1d2731;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+.projects .content-section{
     max-width: 1150px;
     margin: auto;
 }
-.portfolio h2{
+.projects h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
+.projects .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.portfolio .galeria .proyecto a{
+.projects .gallery .project a{
     color: #fff;
     text-decoration: none;
 }
 
-.portfolio .galeria .proyecto{
+.projects .gallery .project{
     position: relative;
     max-width: 475px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+.projects .gallery .project img{
     width: 100%;
     display: block;
 }
-.portfolio .galeria .proyecto .overlay{
+.projects .gallery .project .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -558,99 +559,15 @@ html{
     letter-spacing: 3px;
     opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3{
+.projects .gallery .project .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 }
-.portfolio .galeria .proyecto .overlay:hover{
+.projects .gallery .project .overlay:hover{
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+.projects .gallery .project .overlay:hover h3{
     margin-bottom: 0px;
-}
-/* SECCION CONTACTO */
-.contacto{
-    background-image: url(img/contact_bg.png);
-    background-color: #1d2731;
-    color: #fff;
-    padding: 50px 0;
-}
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.contacto h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.contacto .fila{
-    display: flex;
-}
-.contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-}
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #1d2731;
-    color: #fff;
-    font-size: 18px;
-}
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #f6c5cf;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
-.contacto .col img{
-    width: 100%;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #1d2731;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: #f6c5cf;
-    display: inline-block;
-    margin-right: 20px;
 }
 footer{
     background-color: #1d2731;
@@ -660,10 +577,10 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes{
+footer .links{
     margin-bottom: 20px;
 }
-footer .redes a{
+footer .links a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -676,10 +593,10 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
-footer .redes a:hover{
+footer .links a:hover{
     background-color: #f6c5cf;
 }
-footer .arriba{
+footer .top{
     display: block;
     width: 50px;
     height: 50px;
@@ -693,7 +610,7 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
-/* SECCION RESPONSIVE */
+/* RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
         display: none;
@@ -718,47 +635,41 @@ footer .arriba{
     }
 }
 @media screen and (max-width:700px){
-    .sobremi .fila{
+    .about_me .row{
         display: block;
     }
-    .sobremi .fila .col{
+    .about_me .row .col{
         width: fit-content;
     }
 
-    .skills .fila{
+    .skills .row{
         display: block;
     }
-    .skills .fila .col{
+    .skills .row .col{
         width: 100%;
     }
-    .skills .fila .col .barra-skill{
+    .skills .row .col .skill-bar{
         width: 100%;
     }
 
-    .curriculum .fila{
+    .experiences .row{
         display: block;
     }
-    .curriculum .fila .col{
+    .experiences .row .col{
         width: 90%;
     }
-    .curriculum .fila .derecha{
+    .experiences .row .right{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
+    .projects .gallery{
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+    .projects .gallery .project{
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
+    .projects .gallery .project img{
         width: 100%;
     }
 }
