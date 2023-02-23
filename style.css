@@ -616,6 +616,9 @@ footer .top{
 }
 /* RESPONSIVE */
 @media screen and (max-width:980px){
+    .introduction {
+        background-position: center 20%;
+    }    
     nav{
         display: none;
     }
@@ -639,6 +642,9 @@ footer .top{
     }
 }
 @media screen and (max-width:700px){
+    .introduction {
+        background-position: center 30%;
+    }
     .about_me .row{
         display: block;
     }
